@@ -5,6 +5,9 @@
     using System.Linq;
     using System.Web;
 
+    /// <summary>
+    /// The base class for web-scoped composable parts.
+    /// </summary>
     public abstract class WebScopedComposablePart : ComposablePart
     {
         private readonly ComposablePart _composablePart;

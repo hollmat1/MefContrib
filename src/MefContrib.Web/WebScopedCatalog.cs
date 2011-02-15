@@ -19,8 +19,8 @@
 
             var webScopedParts
                 = from part in partCatalog.Parts
-                  let exportDef = part.ExportDefinitions.First()
-                  where exportDef.Metadata.ContainsKey("CreationPolicy")
+                    let exportDef = part.ExportDefinitions.First()
+                  where exportDef.Metadata.ContainsKey("WebCreationPolicy")
                   select part;
 
             var nonScopedParts = partCatalog.Parts.Except(webScopedParts);

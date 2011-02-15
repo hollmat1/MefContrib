@@ -2,6 +2,9 @@
 {
     using System.ComponentModel.Composition.Primitives;
 
+    /// <summary>
+    /// Represents a composable part that is created once per HTTP request.
+    /// </summary>
     public class WebRequestScopedComposablePart : WebScopedComposablePart
     {
         internal WebRequestScopedComposablePart(ComposablePart composablePart)
