@@ -47,7 +47,14 @@
             return _composablePart.GetExportedValue(_exportDef);
         }
 
+        public override void Activate()
+        {
+            _composablePart.Activate();
+        }
+
         public override void SetImport(ImportDefinition definition, IEnumerable<Export> exports)
-        { }
+        {
+            _composablePart.SetImport(definition, exports);
+        }
     }
 }
